@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperlogin"
+    android:orientation="vertical"
+    android:padding="30dp"
+
+    tools:context=".Login_form">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="690dp"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/emailsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:ems="10"
+            android:layout_marginTop="60dp"
+            android:inputType="text"
+            android:textSize="20sp"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/passwordsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text|textPassword"
+            android:textSize="20sp"
+
+
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/cpasswordsignup"
+            android:layout_width="690dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="text|textPassword"
+            android:textSize="20sp"
+
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/createaccount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Create Account"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+
+
+        />
+    <TextView
+        android:id="@+id/btlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have An Account! Click Here."
+        android:textColor="@color/red"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="10dp">
+
+
+
+    </TextView>
+</LinearLayout>

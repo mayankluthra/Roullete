@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/casinowallpaper">
+
+
+    <EditText
+
+
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-95dp"
+
+        android:text="ID "
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:background="@drawable/button_rounded"
+        android:editable="false"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/eid"
+
+
+        android:layout_width="141dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-95dp"
+
+        android:text="ID"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:background="@drawable/button_rounded"
+        android:editable="false"
+
+        />
+    <EditText
+        android:id="@+id/points"
+
+
+
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="-95dp"
+
+        android:text="00"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:background="@drawable/button_rounded"
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="-170dp"
+        android:layout_marginTop="-95dp"
+
+        android:text="POINTS"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:background="@drawable/button_rounded"
+        android:editable="false"
+
+        />
+
+
+    <Button
+        android:id="@+id/rgo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-90dp"
+        android:background="@drawable/iconroullete"
+
+
+
+        />
+
+    <EditText
+
+
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="-85dp"
+        android:layout_marginTop="-55dp"
+
+        android:text="Games Available"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/button_rounded"
+        android:editable="false"
+
+        />
+    <Button
+android:id="@+id/recharge"
+
+        android:layout_width="225dp"
+        android:layout_height="215dp"
+
+        android:layout_marginLeft="-505dp"
+        android:layout_marginTop="10dp"
+
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/gameking"
+
+
+        />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-310dp"
+        android:layout_marginTop="109dp"
+
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/button_rounded"
+
+
+        />
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="109dp"
+
+        android:text="Transfer"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:background="@drawable/button_rounded"
+
+
+        />
+    <Button
+        android:id="@+id/changePaas"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="109dp"
+
+        android:text="Change Password"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:background="@drawable/button_rounded"
+
+
+        />
+
+
+
+        />
+
+    <EditText
+
+
+        android:layout_width="811dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="-630dp"
+        android:layout_marginTop="145dp"
+
+        android:editable="false"
+        android:text="---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+
+        android:textSize="10dp"
+
+        />
+    <EditText
+
+
+        android:layout_width="5dp"
+        android:layout_height="150dp"
+
+        android:layout_marginLeft="-340dp"
+        android:layout_marginTop="189dp"
+
+        android:text="|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-329dp"
+        android:layout_marginTop="159dp"
+        android:text="Received Points"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-225dp"
+        android:layout_marginTop="193dp"
+        android:text="ID"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/recivedid"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-88dp"
+        android:layout_marginTop="213dp"
+        android:text="Game ID"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/receivedid2"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-135dp"
+        android:layout_marginTop="253dp"
+        android:text="Game ID"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="5dp"
+        android:layout_height="120dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="189dp"
+
+        android:text="|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="193dp"
+        android:text="Points"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/receivedpoints"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-65dp"
+        android:layout_marginTop="213dp"
+        android:text="0"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/receivedpoints2"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-95dp"
+        android:layout_marginTop="253dp"
+        android:text="0"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="159dp"
+        android:text="Trasfered Points"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-225dp"
+        android:layout_marginTop="193dp"
+        android:text="ID"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/transferedid"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-89dp"
+        android:layout_marginTop="213dp"
+        android:text="Game ID"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/transferedid2"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-135dp"
+        android:layout_marginTop="253dp"
+        android:text="Game ID"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="5dp"
+        android:layout_height="120dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="189dp"
+
+        android:text="|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="193dp"
+        android:text="Points"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/transferedpoints"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-65dp"
+        android:layout_marginTop="213dp"
+        android:text="0"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+    <EditText
+
+        android:id="@+id/transferedpoints2"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+
+        android:layout_marginLeft="-95dp"
+        android:layout_marginTop="253dp"
+        android:text="0"
+
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        android:textAlignment="center"
+
+        android:editable="false"
+
+        />
+
+    <Button
+        android:id="@+id/acceptrpoints"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="-370dp"
+        android:background="@drawable/accept"
+
+
+
+        />
+    <Button
+        android:id="@+id/cancelrpoints"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/cancel"
+
+
+
+        />
+    <Button
+        android:id="@+id/acceptrpoints2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="-50dp"
+        android:background="@drawable/accept"
+
+
+
+        />
+    <Button
+        android:id="@+id/cancelrpoints2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/cancel"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/canceltpoints"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="349dp"
+        android:background="@drawable/cancel"
+
+
+
+        />
+    <Button
+        android:id="@+id/canceltpoints2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="-20dp"
+        android:background="@drawable/cancel"
+
+
+
+        />
+</LinearLayout>
