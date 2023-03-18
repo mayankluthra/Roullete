@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "casino-cc76b",
+    "private_key_id": "c0679773c3bfded62b033c007d5e7742be5e25e5",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUv3iri5xT1o+G\ne9AAs/8GQedwNSL6kb3qTT317gi+1DmL9Gt8kRDduBG1umEKTJlHqiWV6fztTcmR\nQ3aVvWwsAiIiKj5dQxT5PmFMeJfds6Ya/ZFrZzWQCdsPdWa0tSlK/V3yblJYE2AP\nhYMle8BASIhH84PMBfo4IAwoHcJl/AfedHYgyRURF+TNrgicRQqfXNt7w+p8PMlh\nLO2/uVKhj8WTKCxyzRcQsWAdXWnFaaYrdRliIqk11ZmjYLkw/Jb2HHurks2G97Q8\nd7KOw0ckExa46xxAlxNVM59+HRiQZW+Wh/R49Nct5Onx6ogr3EWmgvhLnFhQP5vq\nXP05V6ALAgMBAAECggEAQ1H7Wz0oUJc6f3G6Vh6e+lnsZGNMGEH5+KRMkP+roMcD\nFrhXMumsjpxqbjj18A5hCn5aul96e5T7zY2tfqCcFCjwqCL57QUHI/+LRml6lNr+\nGthWJchY+KVFvlSGFXSmBma6TbZ/NAOdiAvVfgz0vuK0zR/PesYBcbUiY6dXFnHf\n7dbqNsNFmjvxSOirZgDS7rM1BFeSD3H2l7z5OsJ94KpN/SCZnSSUDMv7lacVZONS\ny3ZWBtlN5jgqXMGQWBFRnDmEjpBCGI3rv0l24+P2pVwwunhEwys/gK6obyZfL4vS\nP2LwgI91NhSrAYP4F1A6zM8YYjw3Eq/etb+ABiWxkQKBgQD67a7GxdY4fVZCksN0\nxX2E2phngH9PUY58tvXJhXo80nuZI/oqu8w4f7ly7R/5w7eaUPjoyDIRLrsA7Mhw\nVvGNh/gTffHBDDOQg82S6WMaRcvKWTdNdxZ7nyFLhYzQYeOgoNVH7iK6BiK/GUtx\nVdP30ViqkI9OxI13pMCpvaGOlwKBgQDZDD2ZQzqacQZMuMGwUl6h2IqijOz635Oi\niW8M017zZyLOWgOU9ozqTR9slor5AZAtTB1RANoLKIgvCHbkOVjC/4veaamh4yBT\nD1UkWElB3LzKxfOpthJsD90JESTU1fXAG1V/yY5SHm1yMe8ivrjaf2WkJn1uF76q\nm/6qRPRcrQKBgQDcWv2w8Os+kFLAA8JBOW0QziYoPl+OeEB4pPMTFXRTFUQVJ9L4\n1BJzSzbABhyeaZFCovjy81uEW1U9arJadP+LGmxwMZmrvdtKfXR6Hxo4aDKeb9pw\n3LORvByxBYazOEN9O8AQer9kPR8mUkA+NvD+H4mNv4UZ1uGkv7mxViYZ4QKBgFeP\nx5338EF0DW2QL5t5b3HtkOhI4CXJYp70wNc0wp6BYhpLWByVZn3zhRTimsgf6FFN\n3pnaNRzBSkdnK8eglv176KpeiC+mGFlJ2zhhYZRvf75yI3241S/BKpPI1coDUzQg\nEtsNrhvU6KRkHqwusxZ6xL93Q6zRaXscmZ2JWee1AoGBAPifQoY5iq2hlkHWHs/Y\nbYuZ6vsiB0UvagFWBJlwD3cZkZC2k84QV2qaqGRFJL6w9iEwKEGPVxRluvzA3kvd\nztQvqXea2G6ITRqgMRO6/S9JUXB7yEfUZqJf6RYeZzzC118inhBu7KkHUMO77Bdh\n8lsmo0zHwy1cdmAx7efgsfrv\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-ibvqc@casino-cc76b.iam.gserviceaccount.com",
+    "client_id": "100736285622926219203",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ibvqc%40casino-cc76b.iam.gserviceaccount.com"
+  }
+  
