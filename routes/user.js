@@ -47,13 +47,13 @@ router.post('/signup', (req, res) => {
 
 })
 
-router.get('/login', (req, res) => {
+router.post('/login', (req, res) => {
     const user = req.body;
     query = "select * from Login where Username=?";
     connection.query(query, [user.username], (err, results) => {
         if (!err) {
             if (results.length <= 0) {
-                return res.status(401).json({ message: "Incorrect Username" +user.username});
+                return res.status(401).json({ message: "Incorrect Username" + user.username});
             }
             else {
                     //comparing password
