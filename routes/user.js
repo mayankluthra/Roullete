@@ -53,7 +53,7 @@ router.get('/login', (req, res) => {
     connection.query(query, [user.username], (err, results) => {
         if (!err) {
             if (results.length <= 0) {
-                return res.status(401).json({ message: "Incorrect Username" });
+                return res.status(401).json({ message: "Incorrect Username" +user.username});
             }
             else {
                     //comparing password
