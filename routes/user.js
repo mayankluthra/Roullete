@@ -70,7 +70,8 @@ router.post('/login', (req, res) => {
                             res.status(200).json(response);
                         }
                         else if(LoginStatusResponse===false){
-                            res.send("Incorrect Password")
+                            let Message="Incorrect Password"
+                            res.send({message: Message})
                         }
                     })               
             }
