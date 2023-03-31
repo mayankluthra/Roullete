@@ -60,11 +60,14 @@ router.post('/login', (req, res) => {
                     bcrypt.compare(user.password, results[0].Password, (err, LoginStatusResponse)=>{
                         if(LoginStatusResponse===true){
                             //Creating result JSon
-                            const response = { points: results[0].Points, username: results[0].Username }
+                            let response = { points: results[0].Points, username: results[0].Username, masteruserid: results[0].MasterUserID, roulleteTake: results[0].RoulleteTake, ghaziabadTake: results[0].GhaziabadTake, galiTake: results[0].GaliTake, wazirabadTake: results[0].WazirabadTake, fridabadTake: results[0].FaridabadTake}
                             //Creating Token for Result json
                             const accessToken = jwt.sign(response, process.env.ACCESS_TOKEN, { expiresIn: '3h' })
+                            //Creating result JSon
+                            response = { points: results[0].Points, username: results[0].Username, masteruserid: results[0].MasterUserID, roulleteTake: results[0].MasterUserID, ghaziabadTake: results[0].GhaziabadTake, galiTake: results[0].GaliTake, wazirabadTake: results[0].WazirabadTake, fridabadTake: results[0].FaridabadTake, token: accessToken }
+                            
                             //Token sended
-                            res.status(200).json({ token: accessToken });
+                            res.status(200).json(response);
                         }
                         else if(LoginStatusResponse===false){
                             res.send("Incorrect Password")
