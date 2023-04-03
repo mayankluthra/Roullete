@@ -16,7 +16,7 @@ require('dotenv').config();
 
 var auth = require('../services/authentication');
 
-router.get('/get_passbook', auth.authenticateToken, (req, res) => {
+router.post('/get_passbook', /*auth.authenticateToken,*/ (req, res) => {
     let user = req.body;
     let username=res.locals.username
     var query = "Select * from Passbook where Username=? order by Time desc limit ?";
