@@ -42,7 +42,8 @@ router.post('/transfer_points_sp', auth.authenticateToken, (req, res) => {
             if (!err) {
                 var string=JSON.stringify(results[0]);
                 var json =  JSON.parse(string);
-                return res.send(json[0].Status);
+                return res.send({ message: json[0].Status});
+                //return res.send(json[0].Status);
             }
             else {
                 return res.status(500).json(err);
