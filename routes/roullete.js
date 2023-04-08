@@ -51,7 +51,7 @@ cron.schedule("* * * * * *",function(){
         connection.query(query, (err, results) => {
             if(!err){
                 TotalBet=results[0].TotalBet;
-                console.log(TotalBet);
+                //console.log(TotalBet);
             }
         })
         //Loyal Array

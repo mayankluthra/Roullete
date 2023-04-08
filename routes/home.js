@@ -19,10 +19,10 @@ var auth = require('../services/authentication');
 router.post('/get_passbook', auth.authenticateToken, (req, res) => {
     let user = req.body;
     let username=res.locals.username
+    console.log(req);
     var query = "Select * from Passbook where Username=? order by Time desc limit ?";
     connection.query(query, [username, Number(user.loadcount)], (err, results) => {
         if (!err) {
-            console.log(username);
             return res.send(results)
         }
         else {
@@ -31,11 +31,11 @@ router.post('/get_passbook', auth.authenticateToken, (req, res) => {
     })
 });
 //Stored procedure to Transfer Points
-router.get('/transfer_points_sp', auth.authenticateToken, (req, res) => {
+router.post('/transfer_points_sp', auth.authenticateToken, (req, res) => {
     let user = req.body;
     let senderUsername=user.senderUsername;
-    let username=user.username;
-    let pointstotransfer=user.transferpoint;
+    let username=res.locals.username
+    let pointstotransfer=Number(user.transferpoint);
     if(username!=senderUsername && pointstotransfer>0){
     var query = "CALL `usp_TransferPoints`(?, ?, ?, @p3);";
         connection.query(query, [senderUsername,username,pointstotransfer], (err, results) => {
