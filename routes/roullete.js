@@ -97,6 +97,19 @@ cron.schedule("* * * * * *",function(){
             })
         }
     }
-})
+});
+
+//Time fetch
+router.post('/get_Time', auth.authenticateToken, (req, res) => {
+    var query = "Select Timer from Timer";
+    connection.query(query, (err, results) => {
+        if (!err) {
+            return res.send(results)
+        }
+        else {
+            return res.status(500).json(err);
+        }
+    })
+});
 
 module.exports = router;

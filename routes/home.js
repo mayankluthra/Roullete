@@ -19,7 +19,6 @@ var auth = require('../services/authentication');
 router.post('/get_passbook', auth.authenticateToken, (req, res) => {
     let user = req.body;
     let username=res.locals.username
-    console.log(req);
     var query = "Select * from Passbook where Admin=? order by Time desc limit ?";
     connection.query(query, [username, Number(user.loadcount)], (err, results) => {
         if (!err) {
