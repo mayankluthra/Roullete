@@ -5,6 +5,8 @@ var router = express.Router();
 const jwt = require('jsonwebtoken');
 let i=process.env.Time;
 
+var auth = require('../services/authentication');
+
 const shell = require('shelljs')
 
 cron.schedule("* * * * * *",function(){
