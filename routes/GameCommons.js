@@ -8,7 +8,7 @@ require('dotenv').config();
 var auth = require('../services/authentication');
 //SP's
 //Stored procedure to Transfer Points
-router.get('/bet_update_sp', auth.authenticateToken, (req, res) => {
+router.post('/bet_update_sp', auth.authenticateToken, (req, res) => {
     let user=req.body;
     gamename=user.gamename;
     username=res.locals.username;
@@ -32,7 +32,7 @@ router.get('/bet_update_sp', auth.authenticateToken, (req, res) => {
 });
 
 //Stored procedure for taking Dynamic
-router.get('/take_sp', auth.authenticateToken, (req, res) => {
+router.post('/take_sp', auth.authenticateToken, (req, res) => {
     let user=req.body;
     gamename=user.gamename;
     username=res.locals.username;
@@ -51,7 +51,7 @@ router.get('/take_sp', auth.authenticateToken, (req, res) => {
 });
 
 //Stored procedure for cancel bets
-router.get('/cancel_sp', auth.authenticateToken, (req, res) => {
+router.post('/cancel_sp', auth.authenticateToken, (req, res) => {
     let user=req.body;
     gamename=user.gamename;
     username=res.locals.username;
@@ -69,7 +69,7 @@ router.get('/cancel_sp', auth.authenticateToken, (req, res) => {
     
 });
 //Stored procedure for cancel last bets
-router.get('/cancel_last_bet_sp', auth.authenticateToken, (req, res) => {
+router.post('/cancel_last_bet_sp', auth.authenticateToken, (req, res) => {
     let user=req.body;
     gamename=user.gamename;
     bettingno=user.bettingno;
