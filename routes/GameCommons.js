@@ -15,8 +15,8 @@ router.post('/bet_update_sp', auth.authenticateToken, (req, res) => {
     betamount=user.amount;
     bettingno=user.bettingno;
     if(betamount>0){
-    var query = "CALL `usp_BetUpdate`(?, ?, ?,?, @p5);";
-        connection.query(query, [gamename,username,betamount,bettingno], (err, results) => {
+    var query = "CALL `usp_BetUpdate`(?, ?, ?,?, @p5,?);";
+        connection.query(query, [gamename,username,betamount,bettingno,bettingno], (err, results) => {
             if (!err) {
                 var string=JSON.stringify(results[0]);
                 var json =  JSON.parse(string);
