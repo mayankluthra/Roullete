@@ -121,4 +121,16 @@ router.post('/get_Time', auth.authenticateToken, (req, res) => {
     })
 });
 
+router.get('/get_Degree', auth.authenticateToken, (req, res) => {
+    var query = "Select Degree from On_Going_Bet_ID";
+    connection.query(query, (err, results) => {
+        if (!err) {
+            return res.send(results)
+        }
+        else {
+            return res.status(500).json(err);
+        }
+    })
+});
+
 module.exports = router;
