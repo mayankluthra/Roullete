@@ -104,14 +104,6 @@ router.post('/user_lock_bet', auth.authenticateToken, (req, res) => {
         }
     })
 })
-router.post('/user_lakh', auth.authenticateToken, (req, res) => {
-    let user = req.body;
-    var query = "INSERT INTO `Test`(`check`) VALUES (?)";
-    for(let i=1;i<=100000;i++){
-        connection.query(query, [i], (err, results) => {
-        })
-    }
-})
 
 router.post('/lock_bets', auth.authenticateToken, (req, res) => {
     let user = req.body;
@@ -138,6 +130,21 @@ router.post('/unlock_bets', auth.authenticateToken, (req, res) => {
                 return res.status(404).json({ message: "Bets Didn't locked" });
             }
             return res.status(200).json({ message: "Bets Unlocked" });
+        }
+        else {
+            return res.status(404).json({ message: "Please Retry"});
+        }
+    })
+})
+
+router.post('/get_bet_details', auth.authenticateToken, (req, res) => {
+    let user = req.body;
+    gamename=user.gamename;
+    username=res.locals.username;
+    var query = "Select Amount, Betting_No_String from Betting_Table_User_Retrive where Game_Name=? and Game_ID=(Select Bet_No from On_Going_Bet_ID where Game_Name=?) and Username=?";
+    connection.query(query, [gamename,gamename,username], (err, results) => {
+        if (!err) {
+            return res.send(results);
         }
         else {
             return res.status(404).json({ message: "Please Retry"});
