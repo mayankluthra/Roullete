@@ -118,7 +118,6 @@ cron.schedule("* * * * * *",function(){
             var query = "CALL `usp_SlowLoss_OpeningBet`();";
          }
         
-        var 
         connection.query(query, (err, results) => {            
         })
     }
