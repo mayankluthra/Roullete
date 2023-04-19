@@ -141,7 +141,7 @@ router.post('/get_bet_details', auth.authenticateToken, (req, res) => {
     let user = req.body;
     gamename=user.gamename;
     username=res.locals.username;
-    var query = "Select Amount, Betting_No_String from Betting_Table_User_Retrive where Game_Name=? and Game_ID=(Select Bet_No from On_Going_Bet_ID where Game_Name=?) and Username=?";
+    var query = "Select SUM(Amount), Betting_No_String from Betting_Table_User_Retrive where Game_Name=? and Game_ID=(Select Bet_No from On_Going_Bet_ID where Game_Name=?) and Username=? GROUP BY Betting_No_String";
     connection.query(query, [gamename,gamename,username], (err, results) => {
         if (!err) {
             return res.send(results);

@@ -106,6 +106,22 @@ cron.schedule("* * * * * *",function(){
         connection.query(query, (err, results) => {            
         })
     }
+
+    //Calculation
+    if(i===9){
+        const Modes = ['Win', 'SL']
+        const Mode= Modes[Math.floor(Math.random() * Modes.length)]
+        if(Mode==="Win"){
+           var query = "CALL `usp_Winning_OpeningBet`();";
+        }
+        if(Mode==="SL"){
+            var query = "CALL `usp_SlowLoss_OpeningBet`();";
+         }
+        
+        var 
+        connection.query(query, (err, results) => {            
+        })
+    }
 });
 
 //Time fetch
