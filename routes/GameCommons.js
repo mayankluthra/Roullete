@@ -152,6 +152,21 @@ router.post('/get_bet_details', auth.authenticateToken, (req, res) => {
     })
 })
 
+router.post('/get_last_five_bet_details', auth.authenticateToken, (req, res) => {
+    let user = req.body;
+    gamename=user.gamename;
+    username=res.locals.username;
+    var query = "SELECT * FROM `Bets_History` ORDER BY Time DESC limit 5";
+    connection.query(query, [gamename,gamename,username], (err, results) => {
+        if (!err) {
+            return res.send(results);
+        }
+        else {
+            return res.status(404).json({ message: "Please Retry"});
+        }
+    })
+})
+
 
 
 
