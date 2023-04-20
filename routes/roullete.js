@@ -37,7 +37,7 @@ cron.schedule("* * * * * *",function(){
     }
 
     //Calculate Winning Amount
-    if(i===2){
+    /*if(i===2){
         let TotalBet;
         let MAXWin;
         //Getting the Max Win
@@ -98,14 +98,7 @@ cron.schedule("* * * * * *",function(){
                 }
             })
         }
-    }
-
-    //Update betID
-    if(i===3){
-        var query = "Update On_Going_Bet_ID SET Bet_No=Bet_No+1 where Game_Name='Roullete'";
-        connection.query(query, (err, results) => {            
-        })
-    }
+    }*/
 
     //Calculation
     if(i===9){
