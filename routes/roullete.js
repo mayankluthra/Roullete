@@ -108,7 +108,7 @@ cron.schedule("* * * * * *",function(){
            var query = "CALL `usp_Winning_OpeningBet`();";
         }
         if(Mode==="SL"){
-            var query = "CALL `usp_SlowLoss_OpeningBet`();";
+            var query = "CALL `usp_SlowLoss_OpeningBet`('SL');";
          }
         
         connection.query(query, (err, results) => {            
@@ -120,6 +120,20 @@ cron.schedule("* * * * * *",function(){
 router.post('/get_Time', auth.authenticateToken, (req, res) => {
     var query = "Select Timer from Timer";
     connection.query(query, (err, results) => {
+        if (!err) {
+            return res.send(results)
+        }
+        else {
+            return res.status(500).json(err);
+        }
+    })
+});
+
+router.post('/get_Take', auth.authenticateToken, (req, res) => {
+    let user = req.body;
+    let username=res.locals.username;
+    var query = "Select RoulleteTake from Login where Username=?";
+    connection.query(query, [username], (err, results) => {
         if (!err) {
             return res.send(results)
         }
