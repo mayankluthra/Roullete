@@ -92,7 +92,7 @@ cron.schedule("* * * * * *",function(){
             })
         }
         if(Result==='L' || Result==='SL'){
-            connection.query(query,[TotalBet], (err, results) => {
+            conneftion.query(query,[TotalBet], (err, results) => {
                 if(!err){
                     //console.log("L"+TotalBet);
                 }
