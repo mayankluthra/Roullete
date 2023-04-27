@@ -51,13 +51,14 @@ router.post('/login', (req, res) => {
     query = "SELECT `MainUserName`, `SubUserName`, `SubUserPassword` FROM `Login` WHERE `SubUserName`=?";
     connection.query(query, [user.username], (err, results) => {
         if (!err) {
-            if (results.length <= 0) {
+            if (results.length <= 0) {  
                 let Message="Incorrect Username"
                 res.send({message: Message})
             }
             else {
                     //comparing password
-                    bcrypt.compare(user.password, results[0].Password, (err, LoginStatusResponse)=>{
+                    bcrypt.compare(user.password, results[0].SubUserPassword, (err, LoginStatusResponse)=>{
+                                      
                         if(LoginStatusResponse===true){
                             //Creating result JSon
                             let response = { mainusername: results[0].MainUserName, subusername: results[0].SubUserName}
@@ -83,17 +84,6 @@ router.post('/login', (req, res) => {
     })
 })
 
-router.get('/get_bet_details', /*auth.authenticateToken,*/ (req, res) => {
-    var query = "Select * from Betting_Table";
-    connection.query(query, (err, results) => {
-        if (!err) {
-            return res.status(200).json(results);
-        }
-        else {
-            return res.status(500).json(err);
-        }
-    })
-})
 
 router.post('/update_password', auth.authenticateToken, (req, res) => {
     let user = req.body;
